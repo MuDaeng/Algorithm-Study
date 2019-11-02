@@ -38,7 +38,7 @@ public class Node {
 		return false;
 	}
 	public void showEdge() {
-		System.out.print(value + "ÀÇ ÀÎÁ¢¸®½ºÆ®");
+		System.out.print(value + "ì˜ ì¸ì ‘ë¦¬ìŠ¤íŠ¸");
 		for(Edge item : edge) {
 			System.out.print(" -> " + item.getDirect() + ":" + item.getWeight());
 		}

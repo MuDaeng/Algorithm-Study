@@ -12,13 +12,13 @@ public class Flexible {
 	
 	public void testGreedy(int maxUnits) {
 		System.out.println("Use greedy by value to allocate " + maxUnits + " calories");
-		testGreedy(foods, maxUnits, Sort.Value);
+		testGreedy(foods, maxUnits, Criteria.Value);
 		System.out.println("Use greedy by calories to allocate " + maxUnits + " calories");
-		testGreedy(foods, maxUnits, Sort.Calories);
+		testGreedy(foods, maxUnits, Criteria.Calories);
 		System.out.println("Use greedy by density to allocate " + maxUnits + " calories");
-		testGreedy(foods, maxUnits, Sort.Density);
+		testGreedy(foods, maxUnits, Criteria.Density);
 	}
-	private void testGreedy(Food[] foods, int maxUnits, Sort priority) {
+	private void testGreedy(Food[] foods, int maxUnits, Criteria priority) {
 		Food[] tmp = foods.clone();
 		switch(priority) {
 		case Value : 

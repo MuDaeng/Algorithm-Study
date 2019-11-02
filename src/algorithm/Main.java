@@ -11,9 +11,8 @@ public class Main {
 						 {notWised, notWised, 0, 4, notWised},
 						 {notWised, notWised, 2, 0, 3},
 						 {3, notWised, notWised, notWised, 0}};
-		/*
-		 * 
-		 * Show Edges with List
+		
+		//Show Edges with List
 		Node graph[] = new Node[graphArr.length];
 		for(int i = 0; i < graph.length; i++) {
 			graph[i] = new Node(i);
@@ -28,7 +27,6 @@ public class Main {
 		for(int i = 0; i < graph.length; i++) {
 			graph[i].showEdge();
 		}
-		*/
 		
 		// Shortest path with Array
 		for(int k = 0; k < graphArr.length; k++) {
@@ -40,9 +38,9 @@ public class Main {
 				}
 			}
 		}
-		for(int i = 0 ; i < graphArr.length; i++) {
-			for(int j = 0; j < graphArr[i].length; j++) {
-				System.out.print(graphArr[i][j] + "\t");
+		for(int[] index : graphArr) {
+			for(int item : index) {
+				System.out.print(item + "\t");
 			}
 			System.out.println();
 		}

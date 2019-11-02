@@ -1,5 +1,5 @@
 package algorithm;
 
-public enum Sort {
+public enum Criteria {
 	Value, Calories, Density;
 }
