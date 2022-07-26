@@ -1,4 +1,4 @@
-package algorithm;
+package stepFirst;
 
 public class ChangeStringToInteger {
 	public static void main(String[] args) {
@@ -6,6 +6,7 @@ public class ChangeStringToInteger {
 		System.out.println(new ChangeStringToInteger().solution(s));
 	}
     private static String[] numbersEng = {"zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
+    //영어 숫자를 숫자로
     public int solution(String s) {
         for(int i = 0; i < numbersEng.length; i++){
             if(s.contains(numbersEng[i])){

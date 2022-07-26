@@ -1,4 +1,4 @@
-package algorithm;
+package stepFirst;
 
 import java.util.HashMap;
 import java.util.HashSet;
