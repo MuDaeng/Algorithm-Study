@@ -10,8 +10,9 @@ public class StringTest {
 	public static void main(String[] args) {
 //		int[] arr = new StringTest().solution("110010101001");
 //		System.out.print(arr[0] + ", " + arr[1]);
-		test();
+//		test();
 	}
+
 	static void test() {
 		Map<String, Set<String>> id_listMap = new HashMap<String, Set<String>>();
 		Map<String, Integer> idIndex = new HashMap<String, Integer>();
